@@ -21,7 +21,7 @@ function clickFun(e){
 
     },90);
 
-    if(btnInp.textContent !="="){
+    if(btnInp.textContent !== "=" || btnInp.textContent !=="c"){
         inpt.value += btnInp.textContent;
     }else{
         result = inpt.value;
