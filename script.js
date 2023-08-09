@@ -21,11 +21,15 @@ function clickFun(e){
 
     },90);
 
-    if(btnInp.textContent !== "=" || btnInp.textContent !=="c"){
+    if(btnInp.textContent !== "=" && btnInp.textContent !=="c"){
         inpt.value += btnInp.textContent;
-    }else{
+    }else if(btnInp.textContent === "="){
         result = inpt.value;
         inpt.value = eval(result);
+    }else{
+        result = " ";
+        inpt.value = " ";
+
     }
 
 }
